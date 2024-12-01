@@ -173,3 +173,50 @@ previous color : rgb(6, 25, 54)
   cursor: pointer; /* Pointer cursor for interactivity */
   transition: all 0.3s ease; /* Smooth hover effect */
 }
+
+@media (max-width: 768px) {
+  body,
+  html {
+    overflow: auto; /* Allow scrolling on smaller devices */
+  }
+
+  .container {
+    flex-direction: column; /* Stack sidebar and content vertically */
+    height: auto; /* Let height expand based on content */
+  }
+
+  .sidebar {
+    width: 100%; /* Sidebar takes full width on mobile */
+    height: auto; /* Let height adjust based on content */
+    position: relative; /* Make it flow with the content */
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+    text-align: center;
+  }
+
+  .content {
+    margin-left: 0; /* No need for margin */
+    width: 100%; /* Content takes full width */
+    height: auto; /* Let height adjust based on content */
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .sidebar-text h1 {
+    font-size: 2.5rem; /* Smaller font for mobile */
+  }
+
+  .sidebar-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .block {
+    padding: 1.5rem; /* Reduce padding for smaller blocks */
+    margin-bottom: 1.5rem; /* Reduce spacing */
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .rounded-button {
+    padding: 0.4rem 0.8rem; /* Smaller buttons */
+    font-size: 0.75rem; /* Smaller font size */
+  }
+}
