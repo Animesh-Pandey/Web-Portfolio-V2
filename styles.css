@@ -164,7 +164,9 @@ previous color : rgb(6, 25, 54)
 .rounded-button {
   display: inline-block;
   padding: 0.438rem 0.625rem; /* Adjust padding for size */
-  margin: 0.313rem; /* Spacing between buttons */
+  margin: 0.313rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem; /* Spacing between buttons */
   border-radius: 1.25rem; /* Fully rounded corners */
   border: 0.063rem solid rgb(4, 19, 40); /* Border color */
   background-color: rgba(94, 234, 213, 0.215); /* Background color */
@@ -174,6 +176,23 @@ previous color : rgb(6, 25, 54)
   transition: all 0.3s ease; /* Smooth hover effect */
 }
 
+.rounded-button-orange {
+  display: inline-block;
+  padding: 0.438rem 0.625rem; /* Adjust padding for size */
+  margin: 0.313rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem; /* Spacing between buttons */
+  border-radius: 1.25rem; /* Fully rounded corners */
+  border: 0.063rem solid rgb(4, 19, 40); /* Border color */
+  background-color: rgba(232, 131, 58, 0.215); /* Background color */
+  color: rgb(232, 115, 20); /* Text color */
+  font-size: 0.875rem; /* Adjust font size */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+.orange {
+  color: rgb(232, 115, 20); /* Text color */
+}
 @media (max-width: 768px) {
   body,
   html {
