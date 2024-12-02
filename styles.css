@@ -239,3 +239,48 @@ previous color : rgb(6, 25, 54)
     font-size: 0.75rem; /* Smaller font size */
   }
 }
+
+/* \\
+
+
+
+
+
+*/
+.button-container {
+  position: absolute; /* Position the buttons at the bottom */
+  bottom: 2rem; /* Space from the bottom of the sidebar */
+  left: 0; /* Align to the left edge */
+  width: 100%; /* Full width of the sidebar */
+  display: flex; /* Flexbox for buttons */
+  gap: 0.5rem; /* Space between buttons */
+  padding: 0 0.5rem; /* Space on the sides of the buttons */
+}
+
+.soft-button {
+  flex: 1; /* Buttons take equal width */
+  padding: 1rem 0; /* Padding for height */
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(94, 234, 212); /* Text color */
+  text-decoration: none; /* Remove underline */
+  text-align: center; /* Center the text */
+  border-radius: 1rem; /* Slightly rounded corners */
+  background-color: rgba(94, 234, 212, 0.15); /* Soft background */
+  border: 1px solid rgb(94, 234, 212); /* Border color */
+  transition: all 0.3s ease; /* Smooth transition on hover */
+  filter: grayscale(100%);
+}
+
+.soft-button:hover {
+  background-color: rgba(94, 234, 212, 0.3); /* Darker background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  color: rgb(94, 234, 212); /* Text color */
+  border: 1px solid rgb(94, 234, 212); /* Border color */
+  filter: grayscale(0%);
+}
+
+.soft-button:active {
+  transform: scale(0.98); /* Slightly shrink when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
